@@ -99,6 +99,9 @@ module OsPath.PLATFORM_NAME
   ,(<.>)
   ,setFileExtension
   ,(-<.>)
+
+  -- Reexport our quasiquoter
+  , pstr
   )
   where
 
@@ -123,7 +126,7 @@ import           OSPATH_MODULE (PLATFORM_PATH)
 import qualified OSPATH_MODULE as OsPath
 
 import           OsPath.Internal.PLATFORM_NAME
-import           System.OsString.Compat.PLATFORM_NAME (PLATFORM_STRING)
+import           System.OsString.Compat.PLATFORM_NAME (PLATFORM_STRING, pstr)
 import qualified System.OsString.Compat.PLATFORM_NAME as OsString
 
 --------------------------------------------------------------------------------

@@ -96,6 +96,7 @@ module Path.PLATFORM_NAME
   ,(<.>)
   ,setFileExtension
   ,(-<.>)
+  ,pstr
   )
   where
 
@@ -185,6 +186,11 @@ fromJSONKeyWith f =
 
 {-# INLINE fromJSONKeyWith #-}
 
+
+pstr :: QuasiQuoter
+pstr = qq lift
+
+  
 -- | Exceptions that can occur during path operations.
 --
 -- @since 0.6.0

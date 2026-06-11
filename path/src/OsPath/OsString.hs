@@ -4,6 +4,7 @@
 #define PLATFORM_PATH        OsPath
 #define PLATFORM_PATH_SINGLE 'OsPath'
 #define PLATFORM_STRING      OsString
+#define PLATFORM_STRING_SINGLE 'OsString'
 #define OSPATH_MODULE        System.OsPath
 
 #if defined(mingw32_HOST_OS) || defined(__MINGW32__)

@@ -99,6 +99,13 @@ module OsPath.PLATFORM_NAME
   ,(<.>)
   ,setFileExtension
   ,(-<.>)
+
+  -- * Platform string quasiquoter
+  -- | A number of functions in this library take as an argument a "platform string" 
+  -- which in this module is PLATFORM_STRING_SINGLE
+  -- Irregardless of the module you're using from this library, 
+  -- 'pstr' will produce the appropriate "platform string".
+  , pstr
   )
   where
 
@@ -123,7 +130,7 @@ import           OSPATH_MODULE (PLATFORM_PATH)
 import qualified OSPATH_MODULE as OsPath
 
 import           OsPath.Internal.PLATFORM_NAME
-import           System.OsString.Compat.PLATFORM_NAME (PLATFORM_STRING)
+import           System.OsString.Compat.PLATFORM_NAME (PLATFORM_STRING, pstr)
 import qualified System.OsString.Compat.PLATFORM_NAME as OsString
 
 --------------------------------------------------------------------------------
